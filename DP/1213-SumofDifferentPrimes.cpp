@@ -25,7 +25,6 @@ void seive(int n = MAX){
 int n, k;
 int memo[MAX][MAX][20];
 int dp(int idx = 0, int sum = 0, int len = 0){
-    ///cout << idx << "  " <<len << endl;
     if(idx > p.size() || len > k || sum > n){
         return 0;
     }
