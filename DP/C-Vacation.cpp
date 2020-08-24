@@ -10,7 +10,7 @@ int dp(int idx, int lst){
         return 0;
     }
     int& res = memo[idx][lst];
-    if(res != 0){
+    if(lst != -1 && res != 0){
         return res;
     }
     int mx = 0;
